@@ -1,0 +1,135 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <!-- To make browser render the page to the devices width -->
+  <title>Get Quote || Taxi Go Go</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">        <!--Link to Bootstrap -->
+  <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">          <!-- Main Div which contains everything-->
+  <div class="jumbotron">          <!--Jumbotron class is used here to set specific margin, font size and padding-->
+    <div class="row">
+      <div class="col-xs-12">        <!-- Divide screen using A grid layout and total screen contains 12 cols-->
+      <img src="images/banner-logo.jpg" class="img-rounded img-responsive">      <!-- Adds The logo-->
+      </div>
+    </div>
+    <!-- responsive navbar starts -->
+    <nav class="navbar navbar-inverse">        <!--navbar class used to make navigation color black-->
+      <div class="container-fluid">              <!-- stretch content using bootstrap to full width of the screen-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Taxi Go Go</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">    <!--Collapse navbar used so that a button appears-->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <!--Active class is used to show which page the user is on-->
+            <li><a href="Getquote.html">Get Quote</a></li>
+            <li><a href="howitworks.html">How It Works?</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+    <!-- responsive navbar ends -->
+  </div>
+  <div class="jumbotron">
+    <center><h1>Get Quote </h1></br>
+    <p>
+      Please fill in the form below enter the location you would like to be picked up and</br>
+      dropped off. You will recieve an instant quote. Please note that the price is only an</br>
+      estimate and can vary slightly.
+   </br></br> </p></center>
+    
+
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="frommapsearch" class="col-sm-4 control-label">Position of Pickup:</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="frommapsearch" placeholder="Enter The Address For Where You Want To Be Picked Up From...">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tomapsearch" class="col-sm-4 control-label">Destination of Drop Off:</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="tomapsearch" placeholder="Enter The Destination You Would Like To Go To...">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-8">
+          <button id="get_price" type="button" class="btn btn-primary">Get Price</button>
+        </div>
+      </div>
+    </form>
+
+    <input id="maptype" type="hidden" value="roadmap"/>
+
+    <div id="result">
+
+      <div class="embed-responsive embed-responsive-16by9">
+        <div id="map_canvas" class="embed-responsive-item"></div>
+      </div>
+
+      <div class="col-md-offset-2 col-md-8">
+        <table class="table">
+          <tr>
+            <td>Pickup From:</td>
+            <td id="from_address"></td>
+          </tr>
+          <tr>
+            <td>Destination:</td>
+            <td id="to_address"></td>
+          </tr>
+          <tr>
+            <td>Price:</td>
+            <td id="price" class="lead main-price"></td>
+          </tr>
+          <tr>
+            <td>Duration:</td>
+            <td id="aproximate_time"></td>
+          </tr>
+          <tr>
+            <td>Total Distance:</td>
+            <td id="distance_road"></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="text-center">
+              <button id="anchor_to_reset_form" type="button" class="btn btn-default">Reset</button>
+              <a id="anchor_to_book_taxi" type="button" class="btn btn-primary">Next</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-xs-8 col-sm-10 col-lg-11">          <!--Social Media links-->
+      <a href="https://www.snapchat.com" target="_blank"><img class="img-rounded" src="images/snapchat.png" width="25" height="25"></a>
+      <a href="https://www.twitter.com" target="_blank"><img class="img-rounded" src="images/twitter.png" width="25" height="25"></a>
+      <a href="https://www.instagram.com" target="_blank"><img class="img-rounded" src="images/insta.png" width="25" height="25"></a>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  </div>
+<!-- Linked to Jquery and javascript-->
+<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/npm.js" type="text/javascript"></script>
+<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm6bIP0H0alSx0v6Nb6y-gb8exEGkW1iY&libraries=places"></script> -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvm4JA0_L-J0EyrnbHXQKW2mpRYJ0udUs&libraries=places"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+<script type="text/javascript" src="js/my_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "cities": {
+        "Leeds": 25,
+        "Manchester": 20,
+        "Huddersfield": 26,
+        "Sheffield": 24,
+        "Rochdale": 28,
+        "Bradford": 30,
+        "Blackburn": 24,
+        "Preston": 22
+    }
+}

@@ -1,0 +1,122 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <!-- To make browser render the page to the devices width -->
+  <title>Book Taxi || Taxi GoGo</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">        <!--Link to Bootstrap -->
+  <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">          <!-- Main Div which contains everything-->
+  <div class="jumbotron">          <!--Jumbotron class is used here to set specific margin, font size and padding-->
+    <div class="row">
+      <div class="col-xs-12">        <!-- Divide screen using A grid layout and total screen contains 12 cols-->
+      <img src="images/banner-logo.jpg" class="img-rounded img-responsive">      <!-- Adds The logo-->
+      </div>
+    </div>
+    <!-- responsive navbar starts -->
+    <nav class="navbar navbar-inverse">        <!--navbar class used to make navigation color black-->
+      <div class="container-fluid">              <!-- stretch content using bootstrap to full width of the screen-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Taxi Go Go</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">    <!--Collapse navbar used so that a button appears-->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <!--Active class is used to show which page the user is on-->
+            <li><a href="Getquote.html">Get Quote</a></li>
+            <li><a href="howitworks.html">How It Works?</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- responsive navbar ends -->
+  </div>
+  <div class="jumbotron">
+    <center>
+      <h1> Book Taxi Page </h1>
+      <p>
+        Enter your booking details..
+      </p>
+    </center>
+
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="name" class="col-sm-4 control-label">Enter Your Name:</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="col-sm-4 control-label">Enter Phone:</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="phone" placeholder="Enter Phone">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address" class="col-sm-4 control-label">Enter your Address:</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="address" placeholder="Enter your Address">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="info" class="col-sm-4 control-label">Additional information:</label>
+        <div class="col-sm-8">
+          <textarea type="text" class="form-control" id="info" rows="5" placeholder="Enter additional information"></textarea>
+        </div>
+      </div>
+    </form>
+
+    <div class="col-md-offset-2 col-md-8">
+      <table class="table">
+        <tr>
+          <td colspan="2" class="text-center">Booking Information:</td>
+        </tr>
+        <tr>
+          <td>From:</td>
+          <td><label id="label_from"></label></td>
+        </tr>
+        <tr>
+          <td>To</td>
+          <td><label id="label_to"></label></td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td class="main-price lead">&#163;<label id="label_price"></label></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text-center">
+            <button class="btn btn-primary" name="button" value="Submit">Save Details</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+
+  <div class="row">
+    <div class="col-xs-8 col-sm-10 col-lg-11">          <!--Social Media links-->
+      <a href="https://www.snapchat.com" target="_blank"><img class="img-rounded" src="images/snapchat.png" width="25" height="25"></a>
+      <a href="https://www.twitter.com" target="_blank"><img class="img-rounded" src="images/twitter.png" width="25" height="25"></a>
+      <a href="https://www.instagram.com" target="_blank"><img class="img-rounded" src="images/insta.png" width="25" height="25"></a>
+    </div>
+  </div>
+
+  </div>
+</div>
+<!-- Linked to Jquery and javascript-->
+<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/npm.js" type="text/javascript"></script>
+<script src="js/book-recovery.js" type="text/javascript"></script>
+</body>
+</html>
